@@ -3,10 +3,8 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/04/fill/Fill.tst
 
-// Tests the Fill.hack program in the CPU emulator.
-
 load Fill.hack;
-echo "Make sure that 'No Animation' is selected. Then, select the keyboard, press any key for some time, and inspect the screen.";
+echo "First, make sure that 'No Animation' is selected. Then, select the Keyboard icon, click on any key and inspect the screen.";
 
 repeat {
   ticktock;
