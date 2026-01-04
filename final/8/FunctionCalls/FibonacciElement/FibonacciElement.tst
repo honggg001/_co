@@ -1,21 +1,17 @@
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
-// File name: projects/8/FunctionCalls/FibonacciElement/FibonacciElement.tst
+// File name: projects/08/FunctionCalls/FibonacciElement/FibonacciElement.tst
 
-// Tests FibonacciElement.asm on the CPU emulator. 
-// FibonacciElement.asm results from translating Main.vm and Sys.vm into
-// a single assembly program, stored in the file FibonacciElement.asm.
+// FibonacciElement.asm is the result of translating both Main.vm and Sys.vm.
 
 load FibonacciElement.asm,
 output-file FibonacciElement.out,
 compare-to FibonacciElement.cmp,
+output-list RAM[0]%D1.6.1 RAM[261]%D1.6.1;
 
 repeat 6000 {
-	ticktock;
+  ticktock;
 }
 
-// Outputs the stack pointer and the value at the stack's base.
-// That's where the implementation should put the return value.
-output-list RAM[0]%D1.6.1 RAM[261]%D1.6.1;
 output;
